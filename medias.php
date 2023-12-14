@@ -1,27 +1,15 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-        <link rel="icon" href="">
-        <title></title>
-        <meta name="keywords" content="">
-        <meta name="description" content="">
-    </head>
-    <body>
-        <header>
-            <a href="index.html">
-                <img src="">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <!-- élément audio embarqué ; en ligne
+<?php $page_title = "Médias";
+$page_date = new DateTime();
+$page_date->setTimestamp(filectime("./medias.php"));
+
+require "./inc/template_parts/head.php";
+require "./inc/template_parts/site-header.php"; ?>
+
+<main>
+
+    <?php require "./inc/template_parts/page-header.php"; ?>
+
+    <!-- élément audio embarqué ; en ligne
             attributs:
                 src: source du fichier
                 controls (sans valeur): affichage des contrôles de lecture
@@ -33,9 +21,9 @@
                     metadata: seulement les méta-données (recommandée)
                     auto: tout le fichier (par défaut si autoplay=true)
             -->
-            <audio src="" title="" controls preload="metadata">
-                
-                <!-- sous-titres .vtt (audio et video)
+    <audio src="" title="" controls preload="metadata">
+
+        <!-- sous-titres .vtt (audio et video)
                     attributs:
                         default; piste activée par défaut (une seule piste avec cet attribut)
                         kind: utilisation de la piste
@@ -47,14 +35,14 @@
                         label: titre associé à la piste
                         src: url du fichier
                         srclang: langue de la piste (obligatoire si kind="subtitles") -->
-                <track src="">
+        <track src="">
 
-                
-                <a href=""></a>
-            </audio>
-            
-            <picture> <!-- conteneur d'une ou plusieurs sources pour une image -->
-                <!-- ressource média poour picture, audo ou video
+
+        <a href=""></a>
+    </audio>
+
+    <picture> <!-- conteneur d'une ou plusieurs sources pour une image -->
+        <!-- ressource média poour picture, audo ou video
                     attributs:
                         media: mediaquery (uniquement pour picture)
                         src (obligatoire pour audio et video , ignorée pour picture): addresse de la ressource
@@ -64,9 +52,9 @@
                             ou densité de pixel (1.0x)
                         sizes (uniquement pour picture): condition de taille, en lien avec l'attribut srcset, liste séparée par des virgules
                         type: type MIME de la ressource -->
-                <source srcset="" media="">
-                <source srcset="" media="">>
-                <!-- image ; en ligne
+        <source srcset="" media="">
+        <source srcset="" media="">>
+        <!-- image ; en ligne
                 attributs:
                     alt: description alternative
                     src: url
@@ -79,11 +67,11 @@
                         async: après le reste du contenu
                         auto
                     usemap: url partielle (#) d'une carte associée -->
-                <img src="" alt="">
-            </picture>
+        <img src="" alt="">
+    </picture>
 
-            <map name="carte"> <!-- image cliquable divisée en régions ; en ligne ; attribut name unique obligatoire -->
-                <!-- zone de la carte ; associée à un lien
+    <map name="carte"> <!-- image cliquable divisée en régions ; en ligne ; attribut name unique obligatoire -->
+        <!-- zone de la carte ; associée à un lien
                 attributs :
                 (voir a pour les attributs de lien)
                 alt: texte alternatif
@@ -96,14 +84,14 @@
                     pour rect: x1,y1,x2,y2 (coordonnées du coin supérieur gauche et inférieur droit du rectangle)
                     pour circle: x,y,radius (coordonnées du centre du cercle et du rayon)
                     pour poly: x1,y1,x2,y2,...,xn,yn (coordonnées des coins du polygone) -->
-                <area shape="" coords="" href=""> <!-- zone de la carte associée à un lien -->
-                <area shape="" coords="" href="">
-            </map>
-            <img usemap="#carte" src="">
+        <area shape="" coords="" href=""> <!-- zone de la carte associée à un lien -->
+        <area shape="" coords="" href="">
+    </map>
+    <img usemap="#carte" src="">
 
-            <svg></svg> <!-- en ligne -->
-            
-            <!-- contenu vidéo
+    <svg></svg> <!-- en ligne -->
+
+    <!-- contenu vidéo
                 attributs:
                     autoplay (sans valeur): lecture automatique (à éviter)
                     buffered: intervalle temporelle de mise en mémoire tampon
@@ -119,9 +107,9 @@
                     src: url du fichier
                     height: hauteur de la zone
                     width: largeur de la zone  -->
-            <video></video> <!-- en ligne -->
+    <video></video> <!-- en ligne -->
 
-        </main>
-        <footer></footer>
-    </body>
-</html>
+</main>
+
+<?php require "./inc/template_parts/aside.php";
+require "./inc/template_parts/site-footer.php"; ?>

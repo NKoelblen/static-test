@@ -1,0 +1,1 @@
+<aside></aside><!-- encadré n'ayant pas de rapport direct avec le contenu principal -->

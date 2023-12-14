@@ -1,0 +1,87 @@
+<svg version="1.2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 376" width="150" height="126">
+	<title>4858403-ai</title>
+	<defs>
+		<linearGradient id="g1" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.996,0,0,2.939,-56.105,9.191)">
+			<stop offset="0" stop-color="#050405"/>
+			<stop offset="1" stop-color="#000000"/>
+		</linearGradient>
+		<linearGradient id="g2" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-117.883,-205.759,84.249,-48.267,-29.234,496.411)">
+			<stop offset="0" stop-color="#5db4d3"/>
+			<stop offset=".995" stop-color="#3b31bc"/>
+		</linearGradient>
+		<linearGradient id="g3" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(1.987,0,0,3.143,401.119,58.739)">
+			<stop offset="0" stop-color="#050405"/>
+			<stop offset="1" stop-color="#000000"/>
+		</linearGradient>
+		<linearGradient id="g4" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(-156.171,269.338,-118.36,-68.629,294.205,77.252)">
+			<stop offset="0" stop-color="#050405"/>
+			<stop offset="1" stop-color="#000000"/>
+		</linearGradient>
+		<linearGradient id="g5" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(124.194,-216.776,94.9,54.37,439.151,491.326)">
+			<stop offset="0" stop-color="#050405"/>
+			<stop offset="1" stop-color="#000000"/>
+		</linearGradient>
+		<linearGradient id="g6" x2="1" gradientUnits="userSpaceOnUse" gradientTransform="matrix(147.879,255.038,-105.046,60.909,149.726,95.682)">
+			<stop offset="0" stop-color="#050405"/>
+			<stop offset="1" stop-color="#000000"/>
+		</linearGradient>
+	</defs>
+	<style>
+		.s0 { fill: url(#g1) } 
+		.s1 { fill: url(#g2) } 
+		.s2 { fill: url(#g3) } 
+		.s3 { fill: url(#g4) } 
+		.s4 { fill: url(#g5) } 
+		.s5 { fill: url(#g6) } 
+	</style>
+	<g id="BACKGROUND">
+	</g>
+	<g id="OBJECTS">
+		<g id="&lt;Group&gt;" style="opacity: .5;mix-blend-mode: multiply">
+		</g>
+		<g id="&lt;Group&gt;">
+			<g id="&lt;Group&gt;">
+				<g id="&lt;Group&gt;">
+					<g id="&lt;Group&gt;">
+						<g id="&lt;Group&gt;">
+							<g id="&lt;Group&gt;">
+								<path id="&lt;Path&gt;" class="s0" d="m351.5 352.9l-36.6 22.6-217.9-352.4 36.9-22.3z"/>
+							</g>
+							<g id="&lt;Group&gt;">
+								<g id="&lt;Group&gt;">
+									<path id="&lt;Path&gt;" class="s1" d="m132.9 375.7h-41.4c-30.4 0-55-24.7-55-55v-99c0-6.6-5.4-11.9-11.9-11.9h-23.8v-43.1h23.8c30.3 0 55 24.7 55 55v99c0 6.5 5.3 11.9 11.9 11.9h41.4z"/>
+								</g>
+								<g id="&lt;Group&gt;">
+									<path id="&lt;Path&gt;" class="s2" d="m132.9 375.7h-41.4c-30.4 0-55-24.7-55-55v-99c0-6.6-5.4-11.9-11.9-11.9h-23.8v-43.1h23.8c30.3 0 55 24.7 55 55v99c0 6.5 5.3 11.9 11.9 11.9h41.4z"/>
+								</g>
+							</g>
+							<g id="&lt;Group&gt;">
+								<path id="&lt;Path&gt;" class="s3" d="m133.9 0.8l26.6 43.1h-69c-6.6 0-11.9 5.4-11.9 11.9v99c0 30.3-24.7 55-55 55h-23.8v-43.1h23.8c6.5 0 11.9-5.3 11.9-11.9v-99c0-30.3 24.6-55 55-55z"/>
+								<g id="&lt;Group&gt;" style="opacity: .3;mix-blend-mode: multiply">
+								</g>
+							</g>
+							<g id="&lt;Group&gt;">
+								<g id="&lt;Group&gt;">
+									<g id="&lt;Group&gt;">
+										<path id="&lt;Path&gt;" class="s4" d="m315.1 375.7h41.4c30.4 0 55-24.7 55-55v-99c0-6.6 5.4-11.9 11.9-11.9h23.8v-43.1h-23.8c-30.3 0-55 24.7-55 55v99c0 6.5-5.3 11.9-11.9 11.9h-68z"/>
+									</g>
+								</g>
+								<g id="&lt;Group&gt;">
+									<path id="&lt;Path&gt;" class="s5" d="m315.1 0.8v43.1h41.4c6.6 0 11.9 5.4 11.9 11.9v99c0 30.3 24.7 55 55 55h23.8v-43.1h-23.8c-6.5 0-11.9-5.3-11.9-11.9v-99c0-30.3-24.6-55-55-55z"/>
+									<g id="&lt;Group&gt;" style="opacity: .3;mix-blend-mode: multiply">
+									</g>
+								</g>
+							</g>
+						</g>
+						<g id="&lt;Group&gt;">
+							<g id="&lt;Group&gt;">
+							</g>
+							<g id="&lt;Group&gt;">
+							</g>
+						</g>
+					</g>
+				</g>
+			</g>
+		</g>
+	</g>
+</svg>

@@ -1,29 +1,15 @@
-<!DOCTYPE html>
-<html lang="fr">
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-        <link rel="icon" href="">
-        <title></title>
-        <meta name="author" content="">
-        <meta name="keywords" content="">
-        <meta name="description" content="">
-    </head>
-    <body>
-        <header>
-            <a href="index.html">
-                <img src="">
-            </a>
-            <nav>
-                <ul>
-                    <li><a href=""></a></li>
-                    <li><a href=""></a></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
+<?php $page_title = "En ligne";
+$page_date = new DateTime();
+$page_date->setTimestamp(filectime("./inline-elements.php"));
 
-            <!-- liens hypertextes
+require "./inc/template_parts/head.php";
+require "./inc/template_parts/site-header.php"; ?>
+
+<main>
+
+    <?php require "./inc/template_parts/page-header.php"; ?>
+
+    <!-- liens hypertextes
             attributs :
             href: url
             target: contexte de navigation
@@ -36,40 +22,40 @@
                 next: page suivante d'une série dont fait partie la page actuelle
                 prev: page précédente d'une série dont fait parie la page actuelle
                 search: ressource pouvant être utilisée pour effectuer une recherche sur le site -->
-            <a href="https://www.w3.org/" target="_blank" rel="external nofollow noopener"></a> <!-- url absolue -->
-            <a href="index.html"></a> <!-- url relative -->
-            <a href="#"></a> <!-- haut de page -->
-            <a href="#id"></a> <!-- ancre -->
-            <a href="mailto:j.smith@example.com"></a> <!-- adresse email -->
-            <a href="tel:+33123456789"></a> <!-- téléphone -->
+    <a href="https://www.w3.org/" target="_blank" rel="external nofollow noopener"></a> <!-- url absolue -->
+    <a href="index.html"></a> <!-- url relative -->
+    <a href="#"></a> <!-- haut de page -->
+    <a href="#id"></a> <!-- ancre -->
+    <a href="mailto:j.smith@example.com"></a> <!-- adresse email -->
+    <a href="tel:+33123456789"></a> <!-- téléphone -->
 
-            <abbr title=""></abbr> <!-- abréviation ; attribut title: description -->
+    <abbr title=""></abbr> <!-- abréviation ; attribut title: description -->
 
-            <b></b> <!-- gras -->
+    <b></b> <!-- gras -->
 
-            <bdi></bdi> <!-- isolation bidirectionnelle ; par défaut, direction appliquée en fonction du contenu -->
+    <bdi></bdi> <!-- isolation bidirectionnelle ; par défaut, direction appliquée en fonction du contenu -->
 
-            <br> <!-- saut de ligne -->
-            
-            <button type="button"></button> <!-- bouton sans comportement par défaut, à configurer grâce à un script ; pour les liens, privilégier a avec une classe bouton -->
-            
-            <code></code> <!-- fragment de code -->
-            
-            <data value=""></data> <!-- donnée rattachée à un contenu -->
-            
-            <!-- texte supprimé
+    <br> <!-- saut de ligne -->
+
+    <button type="button"></button> <!-- bouton sans comportement par défaut, à configurer grâce à un script ; pour les liens, privilégier a avec une classe bouton -->
+
+    <code></code> <!-- fragment de code -->
+
+    <data value=""></data> <!-- donnée rattachée à un contenu -->
+
+    <!-- texte supprimé
                 attributs:
                     cite: uri d'une ressource expliquant la modification
                     datetime: date et heure de la modification -->
-            <del></del>
-            
-            <dfn></dfn> <!-- terme à définir -->
-            
-            <em></em> <!-- emphase, contenu accentué ; peut être imbriqués -->
-            
-            <i></i> <!-- italique -->
-            
-            <!-- élément externe intégré
+    <del></del>
+
+    <dfn></dfn> <!-- terme à définir -->
+
+    <em></em> <!-- emphase, contenu accentué ; peut être imbriqués -->
+
+    <i></i> <!-- italique -->
+
+    <!-- élément externe intégré
                 attributs:
                     allow: définition d'une politique de confidentialité selon l'origine (accès au micro, à la caméra, aux informations de batterie etc.)
                     allowfullscreen (true/false): plein écran
@@ -99,19 +85,19 @@
                     srcdoc: contenu de la page à intégrer
                     width: largeur
                     height: hauteur -->
-            <iframe></iframe>
-            
-            <!-- texte inséré
+    <iframe></iframe>
+
+    <!-- texte inséré
                 attributs:
                     cite: uri d'une ressource expliquant la modification
                     datetime: date et heure de la modification -->
-            <ins></ins>
-            
-            <kdb></kdb> <!-- saisie clavier ; à combiner éventuellement avec samp -->
-            
-            <mark></mark> <!-- texte pertinent ; surligné -->
-            
-            <!-- jauge ; valeurs dans une intervalle donnée
+    <ins></ins>
+
+    <kdb></kdb> <!-- saisie clavier ; à combiner éventuellement avec samp -->
+
+    <mark></mark> <!-- texte pertinent ; surligné -->
+
+    <!-- jauge ; valeurs dans une intervalle donnée
                 attributs:
                     value (obligatoire): valeur de la mesure
                     min: valeur minimale de la mesure
@@ -120,37 +106,37 @@
                     optimum: valeur idéale pour la mesure
                     high: valeur minimale à partir de laquelle la mesure est considérée comme haute
                     form: id du formulaire -->
-            <meter value=""></meter>
-            
-            <noscript></noscript> <!-- élément à afficher si JavaScript est désactivé -->
-            
-            <!-- barre de progression
+    <meter value=""></meter>
+
+    <noscript></noscript> <!-- élément à afficher si JavaScript est désactivé -->
+
+    <!-- barre de progression
                 attributs:
                     max: valeur correspondant à la complétion de la tâche ; 1 par défaut
                     value: état de la complétion
                     /!\ si value est absent, la barre se déplace sur l'axe de progression -->
-            <progress></progress>
-            
-            <q></q> <!-- citation ; attribut cite: url de la source -->
-            
-            <s></s> <!-- texte barré -->
-            
-            <samp></samp> <!-- réponse produite par un programme informatique -->
-            
-            <small></small> <!-- petits caractères -->
-            
-            <span></span> <!-- conteneur -->
-            
-            <strong></strong> <!-- texte d'importance particulière, en gras -->
-            
-            <sub></sub> <!-- texte en indice -->
+    <progress></progress>
 
-            <sup></sup> <!-- texte en exposant -->
-            
-            <slot></slot>
-            <template></template>
-            
-            <!-- période de temps
+    <q></q> <!-- citation ; attribut cite: url de la source -->
+
+    <s></s> <!-- texte barré -->
+
+    <samp></samp> <!-- réponse produite par un programme informatique -->
+
+    <small></small> <!-- petits caractères -->
+
+    <span></span> <!-- conteneur -->
+
+    <strong></strong> <!-- texte d'importance particulière, en gras -->
+
+    <sub></sub> <!-- texte en indice -->
+
+    <sup></sup> <!-- texte en exposant -->
+
+    <slot></slot>
+    <template></template>
+
+    <!-- période de temps
                 attributs:
                     datetime: date et heure
                         année: 2023
@@ -161,15 +147,15 @@
                         heure: 07:46 / 07:46:39
                         date et heure: 2023-10-07T07:46:39 / 2033-10-07 07:46:39
                         durée: PT4H18M3S -->
-            <time></time>
+    <time></time>
 
-            <u></u> <!-- texte annoté avec des éléments non textuels, souligné-->
-            
-            <var></var> <!-- valeur dans une expression mathématique ou informatique, en italique-->
-            
-            <wbr> <!-- saut de ligne si nécessaire (pour utiliser un trait d'union à la place: &shy; ) -->
+    <u></u> <!-- texte annoté avec des éléments non textuels, souligné-->
 
-        </main>
-        <footer></footer>
-    </body>
-</html>
+    <var></var> <!-- valeur dans une expression mathématique ou informatique, en italique-->
+
+    <wbr> <!-- saut de ligne si nécessaire (pour utiliser un trait d'union à la place: &shy; ) -->
+
+</main>
+
+<?php require "./inc/template_parts/aside.php";
+require "./inc/template_parts/site-footer.php"; ?>
